@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Favourite Football Stars</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="team" class="primary">Team</label>
+          <input type="text" id="team" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="league" class="primary">League</label>
+          <select id="league">
+            <option value="" disabled selected></option>
+            <option value="Serie A">Serie A</option>
+            <option value="La Liga">La Liga</option>
+            <option value="Premier League">Premier League</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Footballer List</h1>
+    <div id="footballer-list"></div>
+  </body>
+</html>
